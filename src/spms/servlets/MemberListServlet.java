@@ -13,6 +13,7 @@ import spms.dao.MemberDao;
  * Servlet implementation class MemberListServlet
  */
 //ServletContext에 보관된 MemberDao 사용하기  
+
 @WebServlet("/member/list")
 public class MemberListServlet extends HttpServlet {
 
@@ -22,6 +23,7 @@ public class MemberListServlet extends HttpServlet {
 			ServletContext sc = this.getServletContext();
 			MemberDao memberDao = (MemberDao)sc.getAttribute("memberDao");
 			request.setAttribute("members", memberDao.selectList());
+			request.setAttribute("viewUrl", "/member/MemberList.jsp");
 		} catch (Exception e) {
 			throw new ServletException(e);
 		}

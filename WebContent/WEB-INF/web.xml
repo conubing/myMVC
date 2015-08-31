@@ -15,7 +15,7 @@
 	</context-param>
 	<context-param>
 		<param-name>url</param-name>
-		<param-value>jdbc:mysql://115.68.27.87/giany2002db</param-value>
+		<param-value>jdbc:mysql://115.68.29.189/giany2002db</param-value>
 	</context-param>
 	<context-param>
 		<param-name>username</param-name>
